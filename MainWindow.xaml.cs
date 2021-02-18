@@ -34,12 +34,13 @@ namespace shop
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            
-            tovar tov = db.tovar.Where(t => t.NameTovar == CBtt.Text).SingleOrDefault();
-            if (tov != null &&  int.Parse(CBtt.Text) > 0)
-            { 
-                
-            }
+
+            var item =  db.tovar.First(t => t.NameTovar== CBt.Text);
+            item.kol_vo -= int.Parse(CBtt.Text);
+            db.SaveChanges();
+            DG.ItemsSource = db.tovar.ToList();
+
         }
+
     }
 }

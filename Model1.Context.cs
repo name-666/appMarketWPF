@@ -26,7 +26,6 @@ namespace shop
         }
     
         public virtual DbSet<Customer> Customer { get; set; }
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<tovar> tovar { get; set; }
         public virtual DbSet<Type> Type { get; set; }
         public virtual DbSet<zakaz> zakaz { get; set; }
