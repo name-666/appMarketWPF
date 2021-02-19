@@ -42,5 +42,12 @@ namespace shop
 
         }
 
+        private void reg_Click(object sender, RoutedEventArgs e)
+        {
+            AdminPanel open = new AdminPanel();
+
+            open.ShowDialog();
+
+        }
     }
 }

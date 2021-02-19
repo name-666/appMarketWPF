@@ -64,6 +64,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AdminPanel.xaml.cs">
+      <DependentUpon>AdminPanel.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Customer.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -81,6 +84,10 @@
     <Compile Include="zakaz.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Page Include="AdminPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

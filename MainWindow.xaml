@@ -8,7 +8,7 @@
         Title="Интернет магазин" Icon="img/shop-icon.png" Height="450" Width="800" ResizeMode="NoResize"  Background="SkyBlue">
     <Grid>
         <Label Content="Добро пожаловать в наш супер магазин" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="OrangeRed" FontSize="24" ></Label>
-        <Button x:Name="reg" Content="Регистрация" HorizontalAlignment="Right" VerticalAlignment="Top"  Margin="7,7,15,7" Foreground="Red"></Button>
+        <Button x:Name="reg" Content="Админ панель" HorizontalAlignment="Right" VerticalAlignment="Top"  Margin="7,7,15,7" Foreground="Red" Click="reg_Click"></Button>
         <DataGrid x:Name="DG" Background="#baabd3" Height="300" VerticalAlignment="Bottom"  Margin="0,0,0,38" AutoGenerateColumns="False" IsReadOnly="True">
             <DataGrid.Columns>
                 <DataGridTextColumn  Header="Наименнование товара" Binding="{ Binding NameTovar}"  Width="1*"></DataGridTextColumn>
