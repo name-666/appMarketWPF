@@ -21,7 +21,27 @@
             </TabItem>
             <TabItem Header="Инструменты" Background="Peru">
                 <Grid Background="Violet">
-                    
+                    <Label x:Name="label" Content="Добавить Тип" Height="auto" HorizontalAlignment="Left" Margin="26,64,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.237,0.058" Width="120"></Label>
+                    <Label x:Name="label2" Content="Добавить Название товара" Height="auto" HorizontalAlignment="Left" Margin="228,64,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.237,0.058" Width="168"></Label>
+                    <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="26,95,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+                    <Button x:Name="button" Content="Добавить" HorizontalAlignment="Left" Margin="26,137,0,0" VerticalAlignment="Top" Width="120" Click="button_Click"/>
+                    <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="228,95,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="150"/>
+                    <ComboBox x:Name="comboBox" DisplayMemberPath="NameType" HorizontalAlignment="Left" Margin="228,149,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="-0.062,0.091"/>
+                    <Label x:Name="label1" Content="Выбрать категирию" HorizontalAlignment="Left" Margin="228,123,0,0" VerticalAlignment="Top" Width="150"/>
+                    <Label x:Name="label1_Copy" Content="Добавить описание" HorizontalAlignment="Left" Margin="228,176,0,0" VerticalAlignment="Top" Width="150"/>
+                    <TextBox x:Name="textBox1_Copy" HorizontalAlignment="Left" Height="47" Margin="162,207,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="216"/>
+                    <Label x:Name="label2_Copy" Content="Добавить цену" Height="auto" HorizontalAlignment="Left" Margin="162,259,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.237,0.058" Width="168"/>
+                    <TextBox x:Name="textBox1_Copy1" HorizontalAlignment="Left" Height="23" Margin="321,262,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="57" RenderTransformOrigin="0.5,-0.435"/>
+                    <Button x:Name="button_Copy" Content="Добавить" HorizontalAlignment="Left" Margin="228,350,0,0" VerticalAlignment="Top" Width="120" Click="button_Copy_Click"/>
+                    <Label x:Name="label2_Copy1" Content="Добавить количество" Height="auto" HorizontalAlignment="Left" Margin="162,302,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.237,0.058" Width="136"/>
+                    <TextBox x:Name="textBox1_Copy2" MaxLength="3"  HorizontalAlignment="Left" Height="23" Margin="321,305,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="57" RenderTransformOrigin="0.5,-0.435"></TextBox>
+                    <DataGrid IsReadOnly="True" AutoGenerateColumns="False" x:Name="dataGrid" HorizontalAlignment="Left" Height="233" Margin="488,95,0,0" VerticalAlignment="Top" Width="276">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Наименование" Binding="{Binding NameTovar}" Width="*"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Тип" Binding="{Binding NameType}" Width="*" ></DataGridTextColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+
                 </Grid>
             </TabItem>
         </TabControl>

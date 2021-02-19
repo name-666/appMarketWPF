@@ -22,7 +22,7 @@
         </DataGrid>
         <Button x:Name="button" Content="Купить" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10" Width="75" Click="button_Click"/>
         <ComboBox x:Name="CBt" DisplayMemberPath="NameTovar" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="100,0,0,10" Width="150"/>
-        <TextBox x:Name="CBtt"  HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="260,0,0,10" Width="50"/>
+        <TextBox x:Name="CBtt"  HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="260,0,0,10" Width="50"></TextBox>
     </Grid>
     
 </Window>

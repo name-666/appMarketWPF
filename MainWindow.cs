@@ -34,12 +34,15 @@ namespace shop
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-
-            var item =  db.tovar.First(t => t.NameTovar== CBt.Text);
-            item.kol_vo -= int.Parse(CBtt.Text);
-            db.SaveChanges();
+            try
+            {
+                var item = db.tovar.First(t => t.NameTovar == CBt.Text && t.kol_vo > 0);
+                item.kol_vo -= int.Parse(CBtt.Text);
+                db.SaveChanges();
+            }
+            catch(Exception) { }
             DG.ItemsSource = db.tovar.ToList();
-
+            
         }
 
         private void reg_Click(object sender, RoutedEventArgs e)
@@ -48,6 +51,11 @@ namespace shop
 
             open.ShowDialog();
 
+        }
+
+        private void CBtt_TextChanged(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = "0123456789".IndexOf(e.Text) < 0;
         }
     }
 }
