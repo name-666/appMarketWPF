@@ -29,5 +29,6 @@ namespace shop
         public virtual DbSet<tovar> tovar { get; set; }
         public virtual DbSet<Type> Type { get; set; }
         public virtual DbSet<zakaz> zakaz { get; set; }
+        public virtual DbSet<user> user { get; set; }
     }
 }

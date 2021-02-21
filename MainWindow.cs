@@ -47,7 +47,7 @@ namespace shop
 
         private void reg_Click(object sender, RoutedEventArgs e)
         {
-            AdminPanel open = new AdminPanel();
+            Enter open = new Enter();
 
             open.ShowDialog();
 

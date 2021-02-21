@@ -12,6 +12,7 @@
         <AssociationConnector Association="shopModel.FK_zakaz_Customer" ManuallyRouted="false" />
         <AssociationConnector Association="shopModel.FK_tovar_Type1" ManuallyRouted="false" />
         <AssociationConnector Association="shopModel.FK_zakaz_tovar" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="shopModel.user" Width="1.5" PointX="0.75" PointY="4.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
